@@ -29,6 +29,10 @@
         font-size: 1.3rem;
         color: #cecece;
     }
+    
+    .cajaDeDatos {
+        display: flex;
+    }
     /* estilos de la tarjetas */
     
     .imgs {
@@ -56,7 +60,7 @@
     
     .img1 .numeros {
         font-family: 'Nunito', sans-serif;
-        margin-top: 34.7%;
+        margin-top: 34.5%;
         margin-left: 11%;
         width: 78%;
         height: 10.5%;
@@ -126,4 +130,141 @@
         margin-left: 5%;
         width: 71%;
         height: 19%;
+    }
+    /* Estilos de los datos */
+    
+    .datos {
+        background: #474747;
+        height: 55vh;
+        width: 30%;
+        margin: 10% 0%;
+        border-radius: 5%;
+        padding: 1%;
+    }
+    
+    .datos h2 {
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        color: whitesmoke;
+        font-size: 2.5rem;
+        margin: 3%;
+    }
+    /* estilos de los inputs */
+    
+    .datos .inputs {
+        height: 50%;
+        margin: 8% 0%;
+    }
+    
+    .inputs {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .inputs .input1 {
+        border: none;
+        outline: none;
+        text-align: center;
+        margin: 3%;
+        width: 60%;
+        height: 4vh;
+        background: none;
+        border-bottom: 1px solid white;
+        color: white;
+    }
+    
+    .inputs .input2 {
+        border: none;
+        outline: none;
+        width: 40%;
+        margin: 3%;
+        padding: 1%;
+        height: 4vh;
+        background: none;
+        border-bottom: 1px solid white;
+        color: white;
+    }
+    
+    .inputs .input3 {
+        border: none;
+        outline: none;
+        width: 20%;
+        margin: 3%;
+        height: 4vh;
+        padding: 1%;
+        background: none;
+        border-bottom: 1px solid white;
+        color: white;
+    }
+    
+    .inputs .input4 {
+        border: none;
+        outline: none;
+        width: 15%;
+        margin: 3%;
+        height: 4vh;
+        padding: 1%;
+        background: none;
+        border-bottom: 1px solid white;
+        color: white;
+    }
+    /*Input input1 y input3 e input4(quitarle los botnes del costado)*/
+    
+    .input1::-webkit-inner-spin-button,
+    .input1::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    .input1 {
+        -moz-appearance: textfield;
+    }
+    
+    .input3::-webkit-inner-spin-button,
+    .input3::-webkit-outer-spin {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    .input4 {
+        -moz-appearance: textfield;
+    }
+    
+    .input4::-webkit-inner-spin-button,
+    .input4::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    .input4 {
+        -moz-appearance: textfield;
+    }
+    /* validacion */
+    
+    .validaciones {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5%;
+    }
+    
+    .validacion-true {
+        width: 45%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bolder;
+        font-size: 1.3rem;
+        padding: 1%;
+        height: 12%;
+        color: green;
+    }
+    
+    .validacion-false {
+        width: 45%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bolder;
+        font-size: 1.3rem;
+        padding: 1%;
+        height: 12%;
+        color: red;
     }
