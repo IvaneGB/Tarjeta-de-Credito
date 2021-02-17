@@ -1,0 +1,107 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-size: 16px;
+        background: #242528;
+    }
+    
+    .container header {
+        text-align: center;
+        margin: 20px 0%;
+    }
+    
+    .container header h1 {
+        font-family: 'Nunito', sans-serif;
+        font-weight: bolder;
+        font-size: 3rem;
+        color: #cecece;
+    }
+    
+    main p {
+        margin: 10px;
+        padding: 0 5%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: lighter;
+        font-size: 1.3rem;
+        color: #cecece;
+    }
+    /* estilos de la tarjetas */
+    
+    .imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 45%;
+        margin: 3%;
+        height: 85vh;
+    }
+    
+    .imgs .img1 {
+        background-image: url(imgs/img1.jpg);
+        background-size: 100% 100%;
+    }
+    
+    .imgs .img1 {
+        border-radius: 5%;
+        margin: 1%;
+        height: 48%;
+        width: 75%;
+    }
+    
+    .imgs .img2 {
+        background-image: url(imgs/img2.jpg);
+        background-size: 100% 100%;
+    }
+    
+    .imgs .img2 {
+        border-radius: 5%;
+        margin: 1%;
+        height: 48%;
+        width: 75%;
+    }
+    
+    .img1 .numeros {
+        font-family: 'Nunito', sans-serif;
+        margin-top: 34.7%;
+        margin-left: 11%;
+        width: 78%;
+        height: 10.5%;
+        background: white;
+    }
+    
+    .img1 .numeros .numero {
+        font-size: 1.3rem;
+        padding: 1%;
+        font-weight: bolder;
+        color: black;
+    }
+    
+    .name {
+        margin: 5%;
+        display: flex;
+    }
+    
+    .name .nombre {
+        width: 50%;
+        font-size: 1rem;
+        font-weight: bolder;
+        background: white;
+        height: 8%;
+        color: black;
+    }
+    
+    .name .fecha {
+        display: flex;
+        align-items: center;
+        margin-left: 24%;
+        width: 18%;
+        font-size: 0.9rem;
+        font-weight: bolder;
+        background: white;
+        color: black;
+    }
