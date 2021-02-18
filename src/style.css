@@ -1,308 +1,339 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-size: 16px;
-        background: #242528;
-    }
-    
-    .container header {
-        text-align: center;
-        margin: 20px 0%;
-    }
-    
-    .container header h1 {
-        font-family: 'Nunito', sans-serif;
-        font-weight: bolder;
-        font-size: 3rem;
-        color: lightgrey;
-    }
-    
-    main p {
-        margin: 10px;
-        padding: 0 5%;
-        font-family: 'Nunito', sans-serif;
-        font-weight: inherit;
-        font-size: 1.3rem;
-        color: lightgrey;
-    }
-    
-    .cajaDeDatos {
-        display: flex;
-    }
-    /* estilos de la tarjetas */
-    
-    .imgs {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 45%;
-        margin: 4%;
-        height: 85vh;
-    }
-    /* tarjeta 1 */
-    
-    .imgs .img1 {
-        background-image: url(imgs/img1.jpg);
-        background-size: 100% 100%;
-    }
-    
-    .imgs .img1 {
-        border-radius: 5%;
-        margin: 1%;
-        height: 48%;
-        width: 75%;
-    }
-    
-    .img1 .numeros {
-        font-family: 'Nunito', sans-serif;
-        margin-top: 34.5%;
-        margin-left: 11%;
-        width: 78%;
-        height: 10.5%;
-        background: white;
-    }
-    
-    .img1 .numeros .numero {
-        font-size: 1.3rem;
-        padding: 1%;
-        font-weight: bolder;
-        color: black;
-    }
-    
-    .name {
-        margin: 5%;
-        display: flex;
-    }
-    
-    .name .nombre {
-        font-family: 'Nunito', sans-serif;
-        width: 50%;
-        font-size: 1rem;
-        font-weight: bolder;
-        background: white;
-        height: 8%;
-        color: black;
-    }
-    
-    .name .fecha {
-        font-family: 'Nunito', sans-serif;
-        display: flex;
-        align-items: center;
-        margin-left: 24.8%;
-        width: 14.5%;
-        height: 3vh;
-        padding: 0%;
-        font-size: 0.8rem;
-        font-weight: bolder;
-        background: white;
-        color: black;
-    }
-    /* tarjeta 2 */
-    
-    .imgs .img2 {
-        background-image: url(imgs/img2.jpg);
-        background-size: 100% 100%;
-    }
-    
-    .imgs .img2 {
-        border-radius: 5%;
-        margin: 1%;
-        height: 48%;
-        width: 75%;
-    }
-    
-    .img2 .clave {
-        background: white;
-        color: black;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 900;
-        font-size: 1.5rem;
-    }
-    
-    .img2 .clave {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 29%;
-        margin-left: 5%;
-        width: 71%;
-        height: 19%;
-    }
-    /* Estilos de los datos */
-    
-    .datos {
-        background: #474747;
-        height: 65vh;
-        width: 30%;
-        margin: 10% 0%;
-        border-radius: 5%;
-        padding: 1%;
-    }
-    
-    .datos h2 {
-        text-align: center;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 600;
-        color: whitesmoke;
-        font-size: 2.5rem;
-        margin: 2%;
-    }
-    /* estilos de los inputs */
-    
-    .datos .inputs {
-        height: 42vh;
-    }
-    
-    .inputs {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    .inputs .input1 {
-        border: none;
-        outline: none;
-        text-align: center;
-        width: 60%;
-        height: 4vh;
-        margin: 3%;
-        background: none;
-        border-bottom: 1px solid white;
-        color: white;
-    }
-    
-    .inputs .input2 {
-        border: none;
-        outline: none;
-        width: 40%;
-        margin: 3%;
-        padding: 1%;
-        height: 4vh;
-        background: none;
-        border-bottom: 1px solid white;
-        color: white;
-    }
-    
-    .inputs .input3 {
-        border: none;
-        outline: none;
-        width: 20%;
-        margin: 3%;
-        height: 4vh;
-        padding: 1%;
-        background: none;
-        border-bottom: 1px solid white;
-        color: white;
-    }
-    
-    .inputs .input4 {
-        border: none;
-        outline: none;
-        width: 15%;
-        margin: 3%;
-        height: 4vh;
-        padding: 1%;
-        background: none;
-        border-bottom: 1px solid white;
-        color: white;
-    }
-    /*Input input1 y input3 e input4(quitarle los botnes del costado)*/
-    
-    .input1::-webkit-inner-spin-button,
-    .input1::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-    
-    .input1 {
-        -moz-appearance: textfield;
-    }
-    
-    .input3::-webkit-inner-spin-button,
-    .input3::-webkit-outer-spin {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-    
-    .input4 {
-        -moz-appearance: textfield;
-    }
-    
-    .input4::-webkit-inner-spin-button,
-    .input4::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-    
-    .input4 {
-        -moz-appearance: textfield;
-    }
-    /* boton */
-    
-    .caja-btn {
-        text-align: center;
-        height: 6vh;
-        margin: 4%;
-    }
-    
-    .btn {
-        font-size: 1.2rem;
-        background: #fe4164;
-        color: whitesmoke;
-        width: 30%;
-        height: 100%;
-        border: none;
-        border-radius: 5%;
-        font-family: 'Nunito', sans-serif;
-        font-weight: bolder;
-        outline: none;
-        cursor: pointer;
-    }
-    
-    .btn:hover {
-        background: #f70071;
-        color: white;
-    }
-    
-    .btn:active {
-        background: #ff5aa4;
-        color: whitesmoke;
-    }
-    /* validacion */
-    
-    .validaciones {
-        margin: 2.5%;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .validacion-true {
-        text-align: center;
-        border-radius: 4%;
-        width: 45%;
-        font-family: 'Nunito', sans-serif;
-        font-weight: bolder;
-        font-size: 1.3rem;
-        padding: 1%;
-        height: 12%;
-        background: #4ea93b;
-        color: lightgrey;
-    }
-    
-    .validacion-false {
-        text-align: center;
-        width: 45%;
-        border-radius: 4%;
-        font-family: 'Nunito', sans-serif;
-        font-weight: bolder;
-        font-size: 1.3rem;
-        padding: 1%;
-        height: 12%;
-        background: #d34340;
-        color: lightgrey;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background: #242528;
+}
+
+.container header {
+    text-align: center;
+    margin: 20px 0%;
+}
+
+.container header h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: lightgrey;
+}
+
+main p {
+    margin: 10px;
+    padding: 0 5%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: inherit;
+    font-size: 1.3rem;
+    color: lightgrey;
+}
+
+.cajaDeDatos {
+    display: flex;
+}
+
+
+/* estilos de la tarjetas */
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    margin: 4%;
+    height: 85vh;
+}
+
+
+/* tarjeta 1 */
+
+.imgs .img1 {
+    background-image: url(imgs/img1.jpg);
+    background-size: 100% 100%;
+}
+
+.imgs .img1 {
+    border-radius: 5%;
+    margin: 1%;
+    height: 48%;
+    width: 75%;
+}
+
+.img1 .numeros {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 34.5%;
+    margin-left: 11%;
+    width: 78%;
+    height: 10.5%;
+    background: white;
+}
+
+.img1 .numeros .numero {
+    font-size: 1.3rem;
+    padding: 1%;
+    font-weight: bolder;
+    color: black;
+}
+
+.name {
+    margin: 5%;
+    display: flex;
+}
+
+.name .nombre {
+    font-family: 'Nunito', sans-serif;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: bolder;
+    background: white;
+    height: 8%;
+    color: black;
+}
+
+.name .fecha {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    margin-left: 24.8%;
+    width: 14.5%;
+    height: 3vh;
+    padding: 0%;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    background: white;
+    color: black;
+}
+
+
+/* tarjeta 2 */
+
+.imgs .img2 {
+    background-image: url(imgs/img2.jpg);
+    background-size: 100% 100%;
+}
+
+.imgs .img2 {
+    border-radius: 5%;
+    margin: 1%;
+    height: 48%;
+    width: 75%;
+}
+
+.img2 .clave {
+    background: white;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.img2 .clave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 29%;
+    margin-left: 5%;
+    width: 71%;
+    height: 19%;
+}
+
+
+/* Estilos de los datos */
+
+.datos {
+    background: #474747;
+    height: 65vh;
+    width: 30%;
+    margin: 10% 0%;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+.datos h2 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    margin: 2%;
+}
+
+
+/* estilos de los inputs */
+
+.datos .inputs {
+    height: 42vh;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs .input1 {
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 60%;
+    height: 4vh;
+    margin: 3%;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.inputs .input2 {
+    border: none;
+    outline: none;
+    width: 40%;
+    margin: 3%;
+    padding: 1%;
+    height: 4vh;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.inputs .input3 {
+    border: none;
+    outline: none;
+    width: 20%;
+    margin: 3%;
+    height: 4vh;
+    padding: 1%;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.inputs .input4 {
+    border: none;
+    outline: none;
+    width: 15%;
+    margin: 3%;
+    height: 4vh;
+    padding: 1%;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+
+/*Input input1 y input3 e input4(quitarle los botnes del costado)*/
+
+.input1::-webkit-inner-spin-button,
+.input1::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input1 {
+    -moz-appearance: textfield;
+}
+
+.input3::-webkit-inner-spin-button,
+.input3::-webkit-outer-spin {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input4 {
+    -moz-appearance: textfield;
+}
+
+.input4::-webkit-inner-spin-button,
+.input4::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input4 {
+    -moz-appearance: textfield;
+}
+
+
+/* boton */
+
+.caja-btn {
+    text-align: center;
+    height: 6vh;
+    margin: 4%;
+}
+
+.btn {
+    font-size: 1.2rem;
+    background: #fe4164;
+    color: whitesmoke;
+    width: 30%;
+    height: 100%;
+    border: none;
+    border-radius: 5%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f70071;
+    color: white;
+}
+
+.btn:active {
+    background: #ff5aa4;
+    color: whitesmoke;
+}
+
+
+/* validacion */
+
+.validaciones {
+    margin: 2.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.validacion-true {
+    text-align: center;
+    border-radius: 4%;
+    width: 45%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 1%;
+    height: 12%;
+    background: #4ea93b;
+    color: lightgrey;
+}
+
+.validacion-false {
+    text-align: center;
+    width: 45%;
+    border-radius: 4%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 1%;
+    height: 12%;
+    background: #d34340;
+    color: lightgrey;
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    background: #32314e;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
