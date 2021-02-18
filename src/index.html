@@ -25,17 +25,17 @@
                 <div class="imgs">
                     <div class="img1">
                         <div class="numeros">
-                            <p class="numero">1234567891234567</p>
+                            <p class="numero" id="numbers"></p>
                         </div>
                         <div class="name">
-                            <p class="nombre">Maria Bejar Flores</p>
+                            <p class="nombre" id="nombre"></p>
 
 
-                            <p class="fecha">30/20</p>
+                            <p class="fecha" id="date"></p>
                         </div>
                     </div>
                     <div class="img2">
-                        <p class="clave">476</p>
+                        <p class="clave" id="clave"></p>
                     </div>
 
 
@@ -45,10 +45,11 @@
 
                     <h2>Datos de la Tarjeta</h2>
                     <div class="inputs">
-                        <input type="number" placeholder="Numero De Tarjeta" class="input1">
-                        <input type="text" placeholder="Nombre" class="input2">
-                        <input type="tel" placeholder="05/2025" class="input3">
-                        <input type="number" placeholder="CVC" class=" input4">
+                        <input type="number" placeholder="Numero De Tarjeta" autocomplete="off" class="input1" id="number">
+                        <input type="text" placeholder="Nombre" autocomplete="off" class="input2" id="name">
+                        <input type="tel" placeholder="05/2025" class="input3" id="input3">
+                        <input type="password" placeholder="CVC" autocomplete="off" class=" input4" id="input4">
+                        <div class="caja-btn"> <button class="btn" id="btn">VALIDAR</button></div>
 
                     </div>
                     <div class="validaciones">

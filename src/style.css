@@ -18,16 +18,16 @@
         font-family: 'Nunito', sans-serif;
         font-weight: bolder;
         font-size: 3rem;
-        color: #cecece;
+        color: lightgrey;
     }
     
     main p {
         margin: 10px;
         padding: 0 5%;
         font-family: 'Nunito', sans-serif;
-        font-weight: lighter;
+        font-weight: inherit;
         font-size: 1.3rem;
-        color: #cecece;
+        color: lightgrey;
     }
     
     .cajaDeDatos {
@@ -93,9 +93,11 @@
         font-family: 'Nunito', sans-serif;
         display: flex;
         align-items: center;
-        margin-left: 24%;
-        width: 18%;
-        font-size: 0.9rem;
+        margin-left: 24.8%;
+        width: 14.5%;
+        height: 3vh;
+        padding: 0%;
+        font-size: 0.8rem;
         font-weight: bolder;
         background: white;
         color: black;
@@ -135,7 +137,7 @@
     
     .datos {
         background: #474747;
-        height: 55vh;
+        height: 65vh;
         width: 30%;
         margin: 10% 0%;
         border-radius: 5%;
@@ -148,13 +150,12 @@
         font-weight: 600;
         color: whitesmoke;
         font-size: 2.5rem;
-        margin: 3%;
+        margin: 2%;
     }
     /* estilos de los inputs */
     
     .datos .inputs {
-        height: 50%;
-        margin: 8% 0%;
+        height: 42vh;
     }
     
     .inputs {
@@ -167,9 +168,9 @@
         border: none;
         outline: none;
         text-align: center;
-        margin: 3%;
         width: 60%;
         height: 4vh;
+        margin: 3%;
         background: none;
         border-bottom: 1px solid white;
         color: white;
@@ -241,30 +242,67 @@
     .input4 {
         -moz-appearance: textfield;
     }
+    /* boton */
+    
+    .caja-btn {
+        text-align: center;
+        height: 6vh;
+        margin: 4%;
+    }
+    
+    .btn {
+        font-size: 1.2rem;
+        background: #fe4164;
+        color: whitesmoke;
+        width: 30%;
+        height: 100%;
+        border: none;
+        border-radius: 5%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bolder;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background: #f70071;
+        color: white;
+    }
+    
+    .btn:active {
+        background: #ff5aa4;
+        color: whitesmoke;
+    }
     /* validacion */
     
     .validaciones {
+        margin: 2.5%;
         display: flex;
         justify-content: space-between;
-        margin: 0 5%;
     }
     
     .validacion-true {
+        text-align: center;
+        border-radius: 4%;
         width: 45%;
         font-family: 'Nunito', sans-serif;
         font-weight: bolder;
         font-size: 1.3rem;
         padding: 1%;
         height: 12%;
-        color: green;
+        background: #4ea93b;
+        color: lightgrey;
     }
     
     .validacion-false {
+        text-align: center;
         width: 45%;
+        border-radius: 4%;
         font-family: 'Nunito', sans-serif;
         font-weight: bolder;
         font-size: 1.3rem;
         padding: 1%;
         height: 12%;
-        color: red;
+        background: #d34340;
+        color: lightgrey;
     }
