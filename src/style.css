@@ -97,6 +97,7 @@ main p {
     font-family: 'Nunito', sans-serif;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 24.8%;
     width: 14.5%;
     height: 3vh;
@@ -147,7 +148,7 @@ main p {
     background: #474747;
     height: 65vh;
     width: 30%;
-    margin: 10% 0%;
+    margin: 9% 0%;
     border-radius: 5%;
     padding: 1%;
 }
@@ -177,7 +178,7 @@ main p {
 .inputs .input1 {
     border: none;
     outline: none;
-    text-align: center;
+    padding: 1%;
     width: 60%;
     height: 4vh;
     margin: 3%;
@@ -298,6 +299,7 @@ main p {
 }
 
 .validacion-true {
+    display: none;
     text-align: center;
     border-radius: 4%;
     width: 45%;
@@ -311,6 +313,7 @@ main p {
 }
 
 .validacion-false {
+    display: none;
     text-align: center;
     width: 45%;
     border-radius: 4%;

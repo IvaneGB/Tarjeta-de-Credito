@@ -1,6 +1,6 @@
-// import validator from './validator.js';
+import validator from './validator.js';
 
-// console.log(validator);
+console.log(validator);
 
 
 
@@ -9,6 +9,7 @@
 
 
 let nUmber = document.getElementById('number')
+
 
 
 function mNumber() {
@@ -76,3 +77,38 @@ function mClave() {
 }
 
 clave.addEventListener('keyup', mClave, true);
+
+
+// CAPTURAR LOS NUMEROS Y MOSTARLOS EN UN CONSOLE LOG 
+
+let boton = document.getElementById('btn');
+
+
+function show() {
+    let n = nUmber.value;
+
+    let inverter = Array.from(n).reverse();
+
+    console.log(inverter);
+
+    for (let i = 0; i < inverter.length; i++) {
+        if (i % 2 === 1) {
+            console.log(parseInt(inverter[i]) * 2);
+            // console.log(inverter[i]);
+            // console.log(inverter[2]);
+        }
+    }
+
+    // 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1
+    // 1 2 3 4 5 6 7 8 9 10111213141516171819
+
+    // for (let numeros of inverter[0]) {
+
+    //     console.log(numeros);
+
+    // }
+
+
+}
+
+boton.addEventListener('click', show, true);
