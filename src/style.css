@@ -295,7 +295,7 @@ main p {
 .validaciones {
     margin: 2.5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .validacion-true {
