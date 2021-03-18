@@ -36,16 +36,19 @@ describe('validator', () => {
             expect(typeof validator.maskify).toBe('function');
         });
 
-        it.skip('Debería retornar "############5616" para "4556364607935616"', () => {
-            // escribe aquí tu test
+        it('Debería retornar "############5616" para "4556364607935616"', () => {
+            const number = validator.maskify("4556364607935616")
+            expect(number).toBe("############5616")
         });
 
-        it.skip('Debería retornar "1" para "1"', () => {
-            // escribe aquí tu test
+        it('Debería retornar "1" para "1"', () => {
+            const number = validator.maskify("1")
+            expect(number).toBe("1")
         });
 
-        it.skip('Debería retornar "######orld" para "helloworld"', () => {
-            // escribe aquí tu test
+        it('Debería retornar "######orld" para "helloworld"', () => {
+            const number = validator.maskify("helloworld")
+            expect(number).toBe("######orld")
         });
     });
 });

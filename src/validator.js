@@ -32,19 +32,48 @@ const validator = {
             }
         }
 
-
-
-
         if (counter % 10 == 0) {
-
-
             return true;
         } else {
             return false;
         }
+    },
+
+    maskify: function(cardNum) {
+
+
+        let arrayFromN = Array.from(cardNum).reverse();
+
+
+
+        // separando los ultimos 4 digitos del array
+
+        let arrayUno = arrayFromN.slice(0, 4);
+
+        arrayUno = arrayUno.reverse().toString()
+        arrayUno = arrayUno.replace(/,/g, "");
+
+
+        // Cortar el resto del array 
+        let arrayDos = arrayFromN.slice(4);
+
+        arrayDos = arrayDos.reverse().toString();
+
+        arrayDos = arrayDos.replace(/,/g, "");
+        arrayDos = arrayDos.replace(/./g, "#");
+
+
+        let result = arrayDos + arrayUno;
+
+        return result;
 
     }
-
 };
+
+
+
+
+
+
 
 export default validator;

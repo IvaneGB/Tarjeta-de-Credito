@@ -7,29 +7,19 @@ console.log(validator);
 
 // Mostrar numero en la tarjeta
 
+let nUmber = document.getElementById('number');
 
-let nUmber = document.getElementById('number')
+// function mNumber() {
 
+//     let n = nUmber.value;
 
+//     let card = document.getElementById('numbers');
 
-function mNumber() {
+//     card.innerHTML = n;
 
-    let n = nUmber.value;
+// }
 
-
-
-
-
-
-    let card = document.getElementById('numbers');
-
-
-
-    card.innerHTML = n;
-
-}
-
-nUmber.addEventListener('keyup', mNumber, true);
+// nUmber.addEventListener('keyup', mNumber, true);
 
 
 // mostrar Nombre en la tarjeta
@@ -86,7 +76,7 @@ function mClave() {
 clave.addEventListener('keyup', mClave, true);
 
 
-// CAPTURAR LOS NUMEROS Y MOSTARLOS EN UN CONSOLE LOG 
+// CAPTURAR LOS NUMEROS Y MOSTARLOS EN PATALLA SI ES VALIDA O NO 
 
 let boton = document.getElementById('btn');
 
@@ -94,7 +84,6 @@ let boton = document.getElementById('btn');
 function show() {
 
     let n = nUmber.value;
-
 
 
 
@@ -114,8 +103,23 @@ function show() {
         document.getElementById('validacion-false').style.display = 'none';
     }
 
-
 }
 
-
 boton.addEventListener('click', show, true);
+
+
+// Mostrar asteriscos en los numeros ,menos en los 4 ultimos
+
+function mostrarNumber() {
+
+    let n = nUmber.value;
+
+    let card = document.getElementById('numbers');
+
+
+
+    // mostar los dos arrays juntos
+    card.innerHTML = validator.maskify(n);
+
+}
+nUmber.addEventListener('keyup', mostrarNumber);
