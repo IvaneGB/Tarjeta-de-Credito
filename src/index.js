@@ -160,3 +160,7 @@ nUmber.addEventListener('keyup', mostrarNumber);
 function areAllFieldsComplete() {
     return nUmber.value !== '' && nAme.value !== '' && fecha.value !== '' && clave.value !== '';
 }
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.toggle('active');
+});

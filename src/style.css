@@ -20,8 +20,7 @@ header {
     padding: 20px 0;
 }
 
-nav{
-}
+nav {}
 
 nav ul {
     display: flex;
@@ -29,7 +28,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
+
 }
 
 nav ul li {
@@ -44,27 +43,32 @@ nav ul li a {
     transition: 0.2s;
 }
 
+.menu-toggle {
+    display: none; /* Ocultar el icono del menú por defecto en dispositivos no móviles */
+    cursor: pointer;
+}
+
 nav ul li a:hover {
     font-weight: bolder;
     text-shadow: #c4c2c2 1px 0 10px;
 }
 
 
-.container{
+.container {
     height: 95vh;
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
 
-main{
+main {
     width: 100%;
     height: 85vh;
     display: flex;
 }
 
-.cajaDeTitulo{
-    
-    display:flex;
+.cajaDeTitulo {
+
+    display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 3rem;
@@ -72,30 +76,31 @@ main{
     width: 35%;
 }
 
-.cajaDeTitulo p{
+.cajaDeTitulo p {
     width: 90%;
 }
+
 .cajaDeTitulo span {
     font-weight: bold;
     font-size: 3.5rem;
 }
 
-.cajaDeTitulo form{
-    
-    display: flex;  
+.cajaDeTitulo form {
+
+    display: flex;
     flex-direction: column;
     height: 30%;
     font-size: 1rem;
     margin: 5% 0%;
 }
 
-.cajaDeTitulo form div{
+.cajaDeTitulo form div {
     margin: 1%;
 
 }
 
 .cajaDeTitulo form input {
-    
+
     padding: 0% 1%;
     margin-left: 2%;
     border: none;
@@ -107,24 +112,24 @@ main{
 
 /* Estilo específico para los diferentes inputs */
 .cajaDeTitulo form div:nth-of-type(1) .custom-input {
-    width: 30%; 
+    width: 30%;
 }
 
 .cajaDeTitulo form div:nth-of-type(2) .custom-input {
-    width: 30%; 
+    width: 30%;
 }
 
 .cajaDeTitulo form div:nth-of-type(3) .custom-input {
-    width: 10%; 
+    width: 10%;
 }
 
 .cajaDeTitulo form div:nth-of-type(4) .custom-input {
-    width: 10%; 
+    width: 10%;
 }
 
 
 /* Estilos para el botón */
-.cajaDeTitulo form button{
+.cajaDeTitulo form button {
     background-color: #168fff;
     color: #fff;
     border: none;
@@ -185,7 +190,7 @@ main{
     color: #721c24;
 }
 
-.img-tarjetaCredito{
+.img-tarjetaCredito {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,28 +199,29 @@ main{
     font-size: 0.8em;
 }
 
-.img-tarjetaCredito .number-Card{
+.img-tarjetaCredito .number-Card {
     width: 25%;
     text-align: center;
     font-weight: 600;
     position: absolute;
     top: 40%;
     color: white;
-    font-size: 1rem;  
+    font-size: 1rem;
 }
 
-.img-tarjetaCredito .name-Card{
-    
-    
+.img-tarjetaCredito .name-Card {
+
+
     position: absolute;
     color: white;
     top: 46%;
     right: 30%;
 }
-.img-tarjetaCredito span{
+
+.img-tarjetaCredito span {
 
     position: absolute;
-    display:inline-flex;
+    display: inline-flex;
     width: 5%;
     gap: 10%;
     color: white;
@@ -223,13 +229,11 @@ main{
     right: 20%;
 
 }
-.img-tarjetaCredito .date-Card{
-    
-   
-}
+
+.img-tarjetaCredito .date-Card {}
 
 
-.img-tarjetaCredito .cvc-Card{
+.img-tarjetaCredito .cvc-Card {
     text-align: center;
     position: absolute;
     color: black;
@@ -243,9 +247,9 @@ main{
     right: 25%;
     height: 4%;
 
-    }
+}
 
-.TarjetaImg{
+.TarjetaImg {
     width: 57%;
     height: 90%;
 }
@@ -299,4 +303,163 @@ footer {
     color: white;
     font-size: 0.8rem;
     font-weight: bolder;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+
+    .container{
+        width: 90%;
+        height: 90%;
+        margin: 5% auto;
+        transition: 0.2s;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar el icono del menú en dispositivos móviles */
+        font-size: 2rem;
+        margin: 0% 5%;
+    }
+
+    nav ul {
+        display: none; /* Ocultar el menú en dispositivos móviles */
+        position: absolute; /* Posición absoluta para que se superponga al contenido */
+        top: 60px; /* Ajusta la distancia desde la parte superior del encabezado */
+        background-color: white; /* Fondo blanco para el menú */
+        z-index: 999; /* Z-index alto para asegurar que esté por encima del contenido */
+        width: 100%; /* Ancho completo del menú */
+        padding: 10px 10px; /* Relleno del menú */
+    }
+
+    nav ul.active {
+        display: block; /* Mostrar el menú desplegable al hacer clic en el icono del menú */
+    }
+
+    nav ul.active li {
+        margin-bottom: 10px; /* Espacio entre elementos del menú */
+        display: block; /* Mostrar los elementos de la lista como bloques */
+    }
+
+    .cajaDeTitulo {
+        padding: 0% 0%;
+        width: 80%;
+        font-size: 2.7rem;
+    }
+
+    .cajaDeTitulo span {
+        font-size: 3.7rem;
+        
+    }
+
+    .cajaDeTitulo form {
+
+        font-size: 0.9rem;
+    
+    }
+
+    /* tengo este input que tiene un placeholder,pero quiero con css borrar el placeholder */
+
+    .cajaDeTitulo form input::placeholder {
+        color: transparent;
+        /* Establece el color del placeholder en transparente */
+    }
+
+    .notification {
+        width: 70%;
+        top: 18%;
+    }
+
+    .cajaDeTitulo form button {
+        width: 30%;
+        margin: 5% auto;
+    }
+
+    .img-tarjetaCredito {
+        display: none;
+        /* Oculta la imagen en dispositivos móviles */
+    }
+
+    footer {
+        display: none;
+    }
+
+}
+
+/* Estilos para dispositivos tipo iPad Mini */
+@media only screen and (min-width: 601px) and (max-width: 1400px) {
+    
+    .container{
+        width: 90%;
+        height: 90%;
+        margin: 5% auto;
+        transition: 0.2s;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar el icono del menú en dispositivos móviles */
+        font-size: 2rem;
+        margin: 0% 5%;
+    }
+
+    nav ul {
+        display: none; /* Ocultar el menú en dispositivos móviles */
+        position: absolute; /* Posición absoluta para que se superponga al contenido */
+        top: 60px; /* Ajusta la distancia desde la parte superior del encabezado */
+        background-color: white; /* Fondo blanco para el menú */
+        z-index: 999; /* Z-index alto para asegurar que esté por encima del contenido */
+        width: 100%; /* Ancho completo del menú */
+        padding: 10px 10px; /* Relleno del menú */
+    }
+
+    nav ul.active {
+        display: block; /* Mostrar el menú desplegable al hacer clic en el icono del menú */
+    }
+
+    nav ul.active li {
+        margin-bottom: 10px; /* Espacio entre elementos del menú */
+        display: block; /* Mostrar los elementos de la lista como bloques */
+    }
+
+    .cajaDeTitulo {
+        padding: 0% 0%;
+        width: 80%;
+        font-size: 2.7rem;
+    }
+
+    .cajaDeTitulo span {
+        font-size: 3.7rem;
+        
+    }
+
+    .cajaDeTitulo form {
+
+        font-size: 0.9rem;
+    
+    }
+
+    /* tengo este input que tiene un placeholder,pero quiero con css borrar el placeholder */
+
+    .cajaDeTitulo form input::placeholder {
+        color: transparent;
+        /* Establece el color del placeholder en transparente */
+    }
+
+    .notification {
+        width: 70%;
+        top: 18%;
+    }
+
+    .cajaDeTitulo form button {
+        width: 30%;
+        margin: 5% auto;
+    }
+
+    .img-tarjetaCredito {
+        display: none;
+        /* Oculta la imagen en dispositivos móviles */
+    }
+
+    footer {
+        display: none;
+    }
 }
