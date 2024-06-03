@@ -7,64 +7,64 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,200;1,300;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/mona-sans" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/halter" rel="stylesheet">            
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <header>
-            <h1>
-                Validate Credit Card Online</h1>
-        </header>
+        
         <main>
+            <div class="cajaDeTitulo">
+                <p> ¿Es válida tu tarjeta de crédito?</p>
+                <span> ¡Evita fraudes y estafas!</span>
 
-            <p>¿Cómo saber si una tarjeta de credito esta activa? ¿Cómo comprobar si una tarjeta de credito es válida? con este valioso verificador de tarjetas de crédito online y también comprobará su fecha de expiración.</p>
-            <p> Esta aplicación no almacena ningún dato ingresado porque funciona con la tecnología JavaScript, lo cual significa que toda la validación se ejecuta en su dispositivo (celular o computadora). Usted puede desconectar su internet y la aplicación
-                continuará funcionando. Es 100% segura.
-            </p>
-            <div class="cajaDeDatos">
-                <div class="imgs">
-                    <div class="img1">
-                        <div class="numeros">
-                            <p class="numero" id="numbers"></p>
-                        </div>
-                        <div class="name">
-                            <p class="nombre" id="nombre"></p>
-
-
-                            <p class="fecha" id="date"></p>
-                        </div>
+                <form>
+                    <div class="">
+                        <label for="number">Número de Tarjeta :</label>
+                        <input type="number" placeholder="" autocomplete="off" class="custom-input" id="number">
                     </div>
-                    <div class="img2">
-                        <p class="clave" id="clave"></p>
+                    <div class="">
+                        <label for="name">Nombre :</label>
+                        <input type="text" placeholder="" autocomplete="off" class="custom-input" id="name-input">
                     </div>
-
-
-                </div>
-
-                <div class="datos">
-
-                    <h2>Datos de la Tarjeta</h2>
-                    <div class="inputs">
-                        <input type="number" placeholder="Numero De Tarjeta" autocomplete="off" class="input1" id="number">
-                        <input type="text" placeholder="Nombre" autocomplete="off" class="input2" id="name">
-                        <input type="tel" placeholder="05/2025" class="input3" id="input3">
-                        <input type="password" placeholder="CVC" autocomplete="off" class=" input4" id="input4">
-                        <div class="caja-btn"> <button class="btn" id="btn">VALIDAR</button></div>
-
+                    
+                    <div class="">
+                        <label for="input3">Fecha de Expiración :</label>
+                        <input type="tel" placeholder="05/2025" class="custom-input" id="input3">
                     </div>
-                    <div class="validaciones">
-                        <div class="validacion-true" id="validacion-true">Tarjeta Valida</div>
-                        <div class="validacion-false" id="validacion-false">Tarjeta Invalida</div>
+                    <div class="">
+                        <label for="input4">CVC :</label>
+                        <input type="password" placeholder="" autocomplete="off" class="custom-input" id="input4">
                     </div>
+                    
+                        <button type="button" id="btn-validar">Comprobar</button>
 
-                </div>
-
+                </form> 
+                <div id="notification" class="notification"></div>
             </div>
+                <div class="img-tarjetaCredito">
 
-
-
-
-
+                    <img src="imgs/card_front-back-transformed.jpeg" alt="" class="TarjetaImg">
+                    <p class="number-Card" id="number-Card"></p>
+                    <p class="name-Card" id="name-Card"></p>
+                    <span>Exp<p class="date-Card" id="date-Card"></p></span>
+                    <p class="cvc-Card" id="clave"></p>
+                </div>
+            </div>
 
         </main>
         <footer>©Ivane 2021 </footer>
