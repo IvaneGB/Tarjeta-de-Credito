@@ -357,8 +357,7 @@ footer {
     
     }
 
-    /* tengo este input que tiene un placeholder,pero quiero con css borrar el placeholder */
-
+    
     .cajaDeTitulo form input::placeholder {
         color: transparent;
         /* Establece el color del placeholder en transparente */
